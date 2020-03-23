@@ -1,7 +1,8 @@
 const express = require("express"),
   db = require("./db"),
   multer = require("multer"),
-  path = require("path");
+  path = require("path"),
+  jwt = require("jsonwebtoken");
 
 const app = express();
 const PORT = 8000;
