@@ -102,7 +102,7 @@ app.post("/signin", (req, res) => {
     if (err) throw err;
     const check = data.find(user => user.userName === User.userName);
     if (check) {
-      jwt.sign({ User }, "Hossam");
+      jwt.sign({ User }, "mysecret");
       res.send({
         msg: `user ${User.userName} is singed in`,
         status: true
